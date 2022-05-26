@@ -81,7 +81,7 @@ body {
  * links - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
-a, a:visited {
+a, a:visited :not(.smoothscroll) {
 	color: #000000;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -282,7 +282,7 @@ ol {
 ul {
 	list-style: disc;
 }
-li {
+li :not(.not) {
 	display: list-item;
 }
 ol, ul {
@@ -2637,4 +2637,40 @@ footer .copyright span:last-child::after {
 	color: #6e6e6e;
 }
 
+.copyright{
+	text-align: center;
+}
+
+nav {
+	display: flex; /* 1 */
+	justify-content: space-between; /* 2 */
+	padding: 1rem; /* 3 */
+	padding-right: 0;;
+	background-color: transparent; /* 4 */
+	position:absolute;
+	top:2rem;
+	right:10rem;
+  }
+  
+  nav ul {
+	display: flex; /* 5 */
+	list-style: none; /* 6 */
+  }
+  
+  nav li {
+	padding: 1rem; /* 7! */
+
+	width: 10rem;
+	
+  }
+  nav li a{
+	color: white;
+	font-family: "Poppins",sans-serif;
+  }
+
+  @media only screen and (max-width: 800px) {
+	nav {
+		right:2rem;
+	  }
+  }
 /*# sourceMappingURL=main.css.map */

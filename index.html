@@ -10,8 +10,9 @@
 	<!--- basic page needs
    ================================================== -->
 	<meta charset="UTF-8">
-	<title>Aleš Lahodný</title>
-	<meta name="description" content="Aleš Lahodný - Web Developer & UX/UI Designer">
+	<title>Aleš Lahodný - Frontend Developer & UX/UI Designer</title>
+	<meta name="description" content="Pomáhám podnikům se zájmem o růst se zviditelněním na internetu a budováním jejich
+	jména v digitálním světě.">
 	<meta name="author" content="Aleš Lahodný">
 
 	<!-- mobile specific metas
@@ -42,32 +43,32 @@
 <body id="top">
 
 	<!-- header 
-   ================================================== -->
+   ================================================== 
 	<header>
 		<div class="row">
 
 			<div class="top-bar">
 				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-				<div class="logo">
-					<a href="index.html">KARDS</a>
+				<div class="">
+					<a href="index.html">.ART</a>
 				</div>
-
+				
 				<nav id="main-nav-wrap">
 					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll" href="#about" title="">About</a></li>
-						<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
+						<li class="current"><a class="smoothscroll" href="#intro" title="">Domů</a></li>
+						<li><a class="smoothscroll" href="#about" title="">O mně</a></li>
 						<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll" href="#services" title="">Services</a></li>
-						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-						<li><a href="styles.html" title="">Style Demo</a></li>
+						<li><a class="smoothscroll" href="#contact" title="">Kontakt</a></li>
 					</ul>
 				</nav>
-			</div> <!-- /top-bar -->
 
-		</div> <!-- /row -->
-	</header> <!-- /header -->
+
+
+			</div> /top-bar 
+
+		</div>  /row 
+	</header>  /header -->
 
 	<!-- intro section
    ================================================== -->
@@ -76,10 +77,18 @@
 		<div class="intro-overlay"></div>
 
 		<div class="intro-content">
+
 			<div class="row">
 
 				<div class="col-twelve">
-
+					<nav>
+						<h2></h2>
+						<ul>
+							<li><a class="smoothscroll" href="#about" title="">O mně</a></li>
+							<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
+							<li><a class="smoothscroll" href="#contact" title="">Kontakt</a></li>
+						</ul>
+					</nav>
 					<h5>lahodny.art</h5>
 					<h1>Aleš Lahodný</h1>
 
@@ -112,7 +121,7 @@
 
 				<div class="intro-info">
 
-					<img src="images/profile-pic.jpg" alt="Profile Picture">
+					<img src="images/me.jpg" alt="Profile Picture">
 
 					<p class="lead">Pomáhám podnikům se zájmem o růst se zviditelněním na internetu a budováním jejich
 						jména v digitálním světě. Měl jsem to štěstí spolupracovat s lidmi z celého
@@ -375,7 +384,7 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/valmon2.jpeg" alt="Shutterbug">
+							<img src="images/portfolio/valmon.jpeg" alt="Shutterbug">
 							<a href="#modal-02" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -407,7 +416,7 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/transa2.jpg" alt="Beetle">
+							<img src="images/portfolio/transa.jpg" alt="Beetle">
 							<a href="#modal-04" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -480,7 +489,7 @@
 					<div id="modal-02" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/valmon2.jpeg" alt="" />
+							<img src="images/portfolio/valmon.jpeg" alt="" />
 						</div>
 
 						<div class="description-box">
@@ -526,7 +535,7 @@
 					<div id="modal-04" class="popup-modal slider mfp-hide">
 
 						<div class="media">
-							<img src="images/portfolio/transa2.jpg" alt="" />
+							<img src="images/portfolio/transa.jpg" alt="" />
 						</div>
 
 						<div class="description-box">
@@ -630,7 +639,7 @@
 					<fieldset>
 
 						<div class="form-field">
-							<input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+							<input name="contactName" type="text" id="contactName" placeholder="Jméno" value=""
 								minlength="2" required="">
 						</div>
 						<div class="form-field">
@@ -638,14 +647,14 @@
 								required="">
 						</div>
 						<div class="form-field">
-							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Předmět" value="">
 						</div>
 						<div class="form-field">
-							<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"
-								cols="50" required=""></textarea>
+							<textarea name="contactMessage" id="contactMessage" placeholder="Zpráva" rows="10" cols="50"
+								required=""></textarea>
 						</div>
 						<div class="form-field">
-							<button class="submitform">Submit</button>
+							<button class="submitform">Odeslat</button>
 							<div id="submit-loader">
 								<div class="text-loader">Sending...</div>
 								<div class="s-loader">
@@ -726,19 +735,8 @@
 	<footer>
 		<div class="row">
 
-			<div class="col-six tab-full pull-right social">
+			<div class="col-twelve">
 
-				<ul class="footer-social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-behance"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-
-			</div>
-
-			<div class="col-six tab-full">
 				<div class="copyright">
 					<span>© Copyright Aleš Lahodný 2022.</span>
 					<span>Design by <a href="http://www.styleshout.com/" target="_blank">styleshout</a></span>
